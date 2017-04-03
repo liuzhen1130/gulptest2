@@ -1,0 +1,43 @@
+/**
+ * Created by liuzhen
+ * on 2017/4/3 下午4:24
+ */
+/**
+ * Created by liuzhen
+ * on 2017/4/3 下午7:27
+ */
+h1 {
+  background: #f00;
+}
+/*
+@switch:dark;
+.mixin(light,@color){
+  color: lighten(@color,50%);
+}
+.mixin (dark, @color) {
+  color: darken(@color,50%);
+}
+.mixin (@_, @color) {
+  display: block;
+}
+*/
+.box {
+  border: 1px solid;
+  box-shadow: 13px 14px 1px #83ff8a;
+  -moz-box-shadow: 13px 14px 1px #83ff8a;
+  -webkit-box-shadow: 13px 14px 1px #83ff8a;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#header {
+  border: 1px solid;
+  border-color: #3fd0db;
+}
+#header h1 {
+  font-size: 24px;
+}
+#header p {
+  color: #ff0;
+}
+#header p a {
+  font-weight: bolder;
+}

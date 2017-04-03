@@ -1,0 +1,66 @@
+/**
+ * Created by liuzhen
+ * on 2017/4/3 下午4:24
+ */
+@import "test";
+
+@the_color:#111;
+@base_color:#34dae6;
+@base_border:1px;
+
+/*
+@switch:dark;
+.mixin(light,@color){
+  color: lighten(@color,50%);
+}
+.mixin (dark, @color) {
+  color: darken(@color,50%);
+}
+.mixin (@_, @color) {
+  display: block;
+}
+*/
+
+.mixin(@a){
+  background-color: @a;
+}
+.mixin(@a,@b){
+  background-color: fade(@a,@b);
+}
+
+
+@border:1px solid ;
+
+
+
+.box-shadow(@x:2px;@y:2px;@blur:1px;@color:#000){
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+.box{
+  border:@border;
+  .box-shadow(13px;14px;1px; #83ff8a);
+  .mixin(#000,10%);
+}
+
+
+#header{
+
+  border:@border;
+  border-color: desaturate(@base_color,10%);
+  h1{
+    font-size:24px;
+  }
+  p{
+    color: #ff0;
+    a{
+      font-weight: bolder;
+      
+      }
+
+    }
+
+}
+
